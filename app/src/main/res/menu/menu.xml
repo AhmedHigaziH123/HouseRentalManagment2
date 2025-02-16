@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Login"
+        android:icon="@drawable/ic_login"
+        android:enabled="true"
+        android:id="@+id/Login"/>
+    <item
+        android:title="SignUp"
+        android:id="@+id/SignUp"
+        android:icon="@drawable/ic_signup"
+        android:enabled="true"/>
+    <item
+        android:title="Add"
+        android:id="@+id/addHouse"
+        android:enabled="true"
+        android:icon="@drawable/ic_addhouse"/>
+    <item
+        android:title="Rent"
+        android:id="@+id/Rent"
+        android:enabled="true"
+        android:icon="@drawable/ic_rent"/>
+
+
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/LogIn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="LogIn"
+            android:textSize="20sp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/LogIn"
+            android:id="@+id/Email"
+            android:textSize="20sp"
+            android:hint="Email"
+            android:gravity="center">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Email"
+            android:id="@+id/Password"
+            android:textSize="20sp"
+            android:hint="Password"
+            android:gravity="center">
+        </com.google.android.material.textfield.TextInputEditText>
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Password"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="210dp"
+                android:layout_height="80dp"
+                android:text="Rented"
+                android:id="@+id/Rented"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/TenAnt"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="TenAnt" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="LogIn"
+            android:textSize="20sp"
+            android:layout_below="@+id/layout"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="SignUp"
+            android:textSize="20sp"
+            android:layout_below="@+id/log"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>
