@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogIn">
+    tools:context=".LogIn"
+    android:background="@color/RBlue">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,25 +16,43 @@
             android:layout_height="80dp"
             android:gravity="center"
             android:text="LogIn"
-            android:textSize="20sp"/>
+            android:textSize="50sp"
+            android:textColor="@color/PrupBlue"
+            android:layout_marginTop="130dp"/>
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@+id/LogIn"
             android:id="@+id/Email"
             android:textSize="20sp"
+            android:textColor="@color/PrupBlue"
+            android:drawableLeft="@drawable/uder2"
+            android:background="@drawable/edit_text"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
             android:hint="Email"
-            android:gravity="center">
+            android:gravity="center"
+            android:inputType="textEmailAddress">
         </com.google.android.material.textfield.TextInputEditText>
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@+id/Email"
-            android:id="@+id/Password"
-            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/lock3"
+            android:gravity="center"
             android:hint="Password"
-            android:gravity="center">
+            android:inputType="textPassword"
+            android:textColor="@color/PrupBlue"
+            android:textSize="20sp">
+
         </com.google.android.material.textfield.TextInputEditText>
+
         <LinearLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
@@ -46,11 +65,15 @@
                 android:layout_height="80dp"
                 android:text="Rented"
                 android:id="@+id/Rented"
+                android:background="@drawable/checkbox"
+                android:textColor="@color/PrupBlue"
                 android:gravity="center"/>
 
             <CheckBox
                 android:id="@+id/TenAnt"
+                android:textColor="@color/PrupBlue"
                 android:layout_width="196dp"
+                android:background="@drawable/checkbox"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="TenAnt" />
@@ -61,13 +84,17 @@
             android:layout_height="80dp"
             android:text="LogIn"
             android:textSize="20sp"
+            android:background="@drawable/button"
             android:layout_below="@+id/layout"
+            android:textColor="@color/PrupBlue"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:text="SignUp"
             android:textSize="20sp"
+            android:background="@drawable/button"
+            android:textColor="@color/PrupBlue"
             android:layout_below="@+id/log"
             />
     </RelativeLayout>

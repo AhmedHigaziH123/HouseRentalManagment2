@@ -3,11 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddAHouseForRent">
+    tools:context=".AddAHouseForRent"
+    android:background="@color/RBlue">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Add a House to Rent"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/PrupBlue"
+            android:id="@+id/txt"
+            android:layout_marginTop="110dp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txt"
+            android:hint="Name"
+            android:background="@drawable/edit_text"
+            android:gravity="center"
+            android:id="@+id/Name"
+            android:textSize="30sp">
 
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Name"
+            android:hint="Phone"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text"
+            android:gravity="center"
+            android:id="@+id/Phone"
+            android:textSize="30sp"
+            android:inputType="number">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Phone"
+            android:hint="Price"
+            android:gravity="center"
+            android:background="@drawable/edit_text"
+            android:id="@+id/Price"
+            android:textSize="30sp"
+            android:inputType="number">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Price"
+            android:hint="Location"
+            android:gravity="center"
+            android:background="@drawable/edit_text"
+            android:id="@+id/Location"
+            android:textSize="30sp">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Location"
+            android:hint="Number of rooms"
+            android:gravity="center"
+            android:background="@drawable/edit_text"
+            android:id="@+id/Rooms"
+            android:inputType="number"
+            android:textSize="30sp">
+        </com.google.android.material.textfield.TextInputEditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Add For Rent"
+            android:textSize="30sp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:layout_below="@+id/Rooms"
+            android:id="@+id/AddForRent" />
     </RelativeLayout>
 
 </FrameLayout>

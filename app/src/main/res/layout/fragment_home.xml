@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFrag"
+    android:background="@color/RBlue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="200dp"
+        android:text="Wellcome to house rental managment application"
+        android:gravity="center"
+        android:textColor="@color/PrupBlue"
+        android:textSize="40sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/Tap"
+            android:layout_below="@+id/textView"
+            android:text="Tap To Enter"
+            android:textSize="40sp"
+            android:textColor="@color/PrupBlue"
+            android:gravity="center"/>
+    </RelativeLayout>
+</FrameLayout>

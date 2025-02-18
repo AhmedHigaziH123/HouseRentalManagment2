@@ -5,10 +5,63 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/RBlue"
     tools:context=".MainActivity">
 
     <FrameLayout
-        android:id="@+id/frame"
+        android:id="@+id/Home_frame"
+        android:layout_width="406dp"
+        android:layout_height="631dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/Login_frame"
+        android:layout_width="406dp"
+        android:layout_height="631dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/SignUp_frame"
+        android:layout_width="406dp"
+        android:layout_height="631dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/RentHouse_frame"
+        android:layout_width="406dp"
+        android:layout_height="631dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/AddAHouseForRent_frame"
         android:layout_width="406dp"
         android:layout_height="631dp"
         android:layout_marginEnd="1dp"
@@ -28,7 +81,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu">
+        app:menu="@menu/menu"
+        android:background="@color/RBlue">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

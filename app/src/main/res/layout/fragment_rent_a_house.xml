@@ -3,12 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RentAHouse">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    tools:context=".RentAHouse"
+    android:background="@color/RBlue">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Rent a House"
+            android:textSize="50sp"
+            android:id="@+id/Txt"
+            android:textColor="@color/PrupBlue"
+            android:gravity="center"
+            android:layout_marginTop="130dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Search"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/edit_text"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:drawableRight="@drawable/search"
+            android:layout_below="@+id/Txt"
+            android:id="@+id/Search">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycle"
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:background="@drawable/recycle"
+            android:layout_below="@+id/Search">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
 
 </FrameLayout>
