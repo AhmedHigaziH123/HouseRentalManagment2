@@ -24,12 +24,15 @@ public class HomeFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
-        txt.findViewById(R.id.Tap);
+        txt.findViewById(R.id.txt);
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MainActivity.Log.setVisibility(View.VISIBLE);
-
+                MainActivity.Home.setVisibility(View.INVISIBLE);
+                MainActivity.SignUp.setVisibility(View.INVISIBLE);
+                MainActivity.AddHouseForRent.setVisibility(View.INVISIBLE);
+                MainActivity.RentHouse.setVisibility(View.INVISIBLE);
             }
         });
         return view;

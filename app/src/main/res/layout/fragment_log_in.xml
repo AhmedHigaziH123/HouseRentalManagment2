@@ -1,103 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LogIn"
-    android:background="@color/RBlue">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
 
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/LogIn"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:gravity="center"
-            android:text="LogIn"
-            android:textSize="50sp"
-            android:textColor="@color/PrupBlue"
-            android:layout_marginTop="130dp"/>
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_below="@+id/LogIn"
-            android:id="@+id/Email"
-            android:textSize="20sp"
-            android:textColor="@color/PrupBlue"
-            android:drawableLeft="@drawable/uder2"
-            android:background="@drawable/edit_text"
-            android:padding="8dp"
-            android:drawablePadding="8dp"
-            android:hint="Email"
-            android:gravity="center"
-            android:inputType="textEmailAddress">
-        </com.google.android.material.textfield.TextInputEditText>
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Password"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_below="@+id/Email"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text"
-            android:drawablePadding="8dp"
-            android:padding="8dp"
-            android:drawableLeft="@drawable/lock3"
-            android:gravity="center"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/PrupBlue"
-            android:textSize="20sp">
-
-        </com.google.android.material.textfield.TextInputEditText>
+        android:layout_height="360dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/cardview"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
         <LinearLayout
-            android:id="@+id/layout"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_below="@+id/Password"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-            <CheckBox
-                android:layout_width="210dp"
-                android:layout_height="80dp"
-                android:text="Rented"
-                android:id="@+id/Rented"
-                android:background="@drawable/checkbox"
-                android:textColor="@color/PrupBlue"
-                android:gravity="center"/>
-
-            <CheckBox
-                android:id="@+id/TenAnt"
-                android:textColor="@color/PrupBlue"
-                android:layout_width="196dp"
-                android:background="@drawable/checkbox"
-                android:layout_height="match_parent"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="TenAnt" />
+                android:text="Login"
+                android:textColor="@color/RBlue"
+                android:textSize="40dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/edit_text"
+                android:drawableLeft="@drawable/email"
+                android:gravity="center"
+                android:hint="Email"
+                android:padding="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/edit_text"
+                android:drawableLeft="@drawable/lock3"
+                android:gravity="center"
+                android:hint="Password"
+                android:padding="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Tenant"
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text"
+                    android:text="tenant">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/lordhome"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text"
+                    android:text="lordhome">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:text="Login"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:text="SignUp"
+                android:textSize="20dp"/>
+
         </LinearLayout>
-        <Button
-            android:id="@+id/log"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="LogIn"
-            android:textSize="20sp"
-            android:background="@drawable/button"
-            android:layout_below="@+id/layout"
-            android:textColor="@color/PrupBlue"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="SignUp"
-            android:textSize="20sp"
-            android:background="@drawable/button"
-            android:textColor="@color/PrupBlue"
-            android:layout_below="@+id/log"
-            />
-    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
-</FrameLayout>
+</LinearLayout>
