@@ -33,7 +33,7 @@
                 android:textSize="40dp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Email1"
+                android:id="@+id/Emaila"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
                 android:background="@drawable/edit_text"
@@ -87,7 +87,7 @@
                 android:id="@+id/SignUp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@drawable/edit_text"
+                android:background="@color/RBlue"
                 android:text="SignUp"
                 android:textSize="20dp" />
         </LinearLayout>

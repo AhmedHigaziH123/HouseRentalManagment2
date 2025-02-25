@@ -24,7 +24,7 @@ public class HomeFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
-        txt.findViewById(R.id.txt);
+        txt=view.findViewById(R.id.txt);
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
