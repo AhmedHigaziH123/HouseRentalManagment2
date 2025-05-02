@@ -4,55 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".RentAHouse"
+    tools:context="FragmentsAndActivities.RentAHouse"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/background">
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="385dp"
-        android:layout_margin="30dp"
-        android:background="@drawable/cardview"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp">
+    android:background="@color/black">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/cardview"
-            android:orientation="vertical"
-            android:padding="24dp">
+
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
                 android:gravity="center"
                 android:text="RentAHouse"
-                android:textColor="@color/RBlue"
+                android:textColor="@color/KingBlue"
                 android:textSize="40dp" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Search"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:background="@drawable/edit_text"
-                android:drawableRight="@drawable/search"
-                android:gravity="center"
-                android:hint="Search"
-                android:padding="10dp">
 
-            </com.google.android.material.textfield.TextInputEditText>
+
+
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/Recycle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:background="@drawable/edit_text">
 
             </androidx.recyclerview.widget.RecyclerView>
 
+
+
         </LinearLayout>
 
 
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>

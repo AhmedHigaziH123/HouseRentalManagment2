@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:orientation="vertical"
+        android:background="@drawable/edit_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/edit_text"
+            android:drawableLeft="@drawable/ic_user"
+            android:gravity="center"
+            android:hint="Enter youer id"
+            android:inputType="text"
+            android:id="@+id/RenterId"
+            android:textColor="@color/KingBlue"
+            android:textColorHint="@color/KingBlue"
+            android:textSize="30sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/Send"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="send requset"
+            android:textSize="20dp"
+            android:backgroundTint="@color/KingBlue"/>
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="cancel"
+            android:textSize="20dp"
+            android:backgroundTint="@color/KingBlue"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

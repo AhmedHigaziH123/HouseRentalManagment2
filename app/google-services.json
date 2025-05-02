@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13748738855",
+    "project_id": "houserentalmanagment-bc043",
+    "storage_bucket": "houserentalmanagment-bc043.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13748738855:android:6a0ae18a17a2e8458fa702",
+        "android_client_info": {
+          "package_name": "com.example.houserentalmanagment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNKNFrGQhU9qpLM5anGXzRj7uaM9IgOh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

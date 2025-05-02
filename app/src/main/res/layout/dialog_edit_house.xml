@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="FragmentsAndActivities.AddAHouseForRent"
-    android:gravity="center"
     android:orientation="vertical"
     android:background="@color/black">
-
-
-    <TextView
-        android:id="@+id/ADD"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:gravity="center"
-        android:text="AddAhouseForRent"
-        android:textColor="@color/KingBlue"
-        android:textSize="30dp"
-        />
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/PhonN"
         android:layout_width="match_parent"
@@ -117,32 +101,22 @@
 
     </com.google.android.material.textfield.TextInputEditText>
 
-
     <Button
-        android:id="@+id/AddTheHouse"
+        android:id="@+id/edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="87dp"
         android:backgroundTint="@color/KingBlue"
-        android:text="AddTheHouse"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/allRequsets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/KingBlue"
-        android:text="All Requsets"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/Edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/KingBlue"
+        android:gravity="center"
         android:text="Edit information"
         android:textSize="20dp" />
-
-
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:backgroundTint="@color/KingBlue"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="20dp" />
 
 
 </LinearLayout>

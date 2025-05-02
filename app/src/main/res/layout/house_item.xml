@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Price1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="price:"
+            android:textSize="15sp"
+            android:textColor="@color/KingBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Price2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="______"
+            android:textColor="@color/KingBlue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phone:"
+            android:textColor="@color/KingBlue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="______"
+            android:textColor="@color/KingBlue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Location1"
+            android:layout_width="match_parent"
+            android:textColor="@color/KingBlue"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Location2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="______"
+            android:textColor="@color/KingBlue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Rooms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rooms:"
+            android:textSize="15sp"
+            android:textColor="@color/KingBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Rooms"
+            android:textColor="@color/KingBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="______"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/IsRented1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IsRented:"
+            android:textSize="15sp"
+            android:textColor="@color/KingBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/IsRented2"
+            android:textColor="@color/KingBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The House is not rented"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Rent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:backgroundTint="@color/KingBlue"/>
+
+
+
+</LinearLayout>
